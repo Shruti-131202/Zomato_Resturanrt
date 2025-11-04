@@ -1,74 +1,45 @@
 # 🍽️ Zomato Restaurant Data Analysis (SQL Project)
 
-##  Project Overview
-The **Zomato Restaurant Data Analysis** project focuses on uncovering insights from restaurant data using SQL.  
-It helps identify patterns in restaurant distribution, pricing, customer preferences, and ratings — valuable for business owners, analysts, and customers alike.
+##  **Project Overview**
+The **Zomato Restaurant Data Analysis** project focuses on exploring restaurant data using **SQL** to uncover meaningful insights.  
+It analyzes restaurant distribution, pricing, cuisines, and customer ratings to understand business performance and customer preferences.  
+The project demonstrates how data analysis can support strategic decisions for restaurant owners and help customers discover better dining options.
 
 ---
 
-##  Objective
-- Analyze restaurant distribution across cities and countries  
-- Identify popular cuisines and cost patterns  
-- Compare restaurant ratings and delivery availability  
-- Derive insights for business decision-making  
+##  **Objective**
+- Analyze restaurant distribution across different cities and countries  
+- Identify popular cuisines and their average pricing  
+- Compare online delivery and table booking trends  
+- Find top-rated restaurants and understand customer preferences  
+- Derive data-driven insights to support business decisions  
 
 ---
 
-##  Tools & Technologies
+##  **Tools & Technologies**
 - **Language:** SQL  
 - **Database:** MySQL  
-- **Techniques:** Joins, Aggregations, Grouping, Subqueries, Data Cleaning, EDA  
+- **Techniques Used:**  
+  - Data Cleaning  
+  - Joins and Subqueries  
+  - Aggregations and Grouping  
+  - Descriptive and Exploratory Data Analysis (EDA)
 
 ---
 
-##  Database Structure
-**Tables Used:**
-1. `restaurant` – Contains restaurant details (name, cost, ratings, votes, delivery options)  
-2. `restaurant_address` – Contains location details (country, city, locality, cuisines, address)
+##  **Insights**
+- Major cities have a higher concentration of restaurants, indicating competitive markets.  
+- Indian, Chinese, and Italian cuisines are among the most popular choices.  
+- Online delivery services are more common than table booking options.  
+- Highly rated restaurants often receive a greater number of customer votes, showing stronger engagement.  
+- The average cost for dining is generally higher in metropolitan cities compared to smaller towns.  
 
 ---
 
-##  Key SQL Queries
-Some key SQL queries include:
-```sql
--- 1. Total number of restaurants in each country
-SELECT Country, COUNT(*) AS Total_Restaurants
-FROM restaurant_address
-GROUP BY Country
-ORDER BY Total_Restaurants DESC;
-
--- 2. Top 3 cities with highest average rating
-SELECT City, ROUND(AVG(Rating), 2) AS Avg_Rating
-FROM restaurant_address
-JOIN restaurant ON restaurant_address.RestaurantId = restaurant.RestaurantId
-GROUP BY City
-ORDER BY Avg_Rating DESC
-LIMIT 3;
----
-View All queries in
----
-##  Insights and Finding
-
-- Major cities host a higher number of restaurants
-
-- Indian, Chinese, and Italian cuisines dominate across cities
-
-- Online delivery is more common than table booking
-
-- High-rated restaurants often receive more customer votes
-
-- Metro cities tend to have higher average costs for two
+##  **Conclusion**
+This project highlights how **SQL** can be leveraged to perform **data-driven analysis** in the restaurant industry.  
+It demonstrates the importance of querying, aggregating, and analyzing data to identify patterns and trends that can improve business performance and customer experience.  
+The analysis provides a solid foundation for data analysts to make informed, strategic decisions using structured datasets.
 
 ---
 
-##  Project Files
-- Zomato_sql_project.pptx	Presentation with visuals and insights
-
----
-
- ##  Conclusion
-
-This project demonstrates how SQL can be applied for data-driven insights in the restaurant industry.
-It provides a strong example of database querying, aggregation, and analysis skills — essential for aspiring data analysts.
-ORDER BY Avg_Rating DESC
-LIMIT 3;
