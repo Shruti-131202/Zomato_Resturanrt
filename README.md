@@ -27,6 +27,53 @@ The project demonstrates how data analysis can support strategic decisions for r
 
 ---
 
+##  **Database Structure**
+
+### **Table 1: restaurant**
+| Column | Description |
+|--------|--------------|
+| RestaurantId | Unique ID for each restaurant |
+| RestaurantName | Name of the restaurant |
+| Has_table_booking | Availability of table booking |
+| Has_online_delivery | Availability of online delivery |
+| Is_delivering_now | Whether currently delivering |
+| Average_cost_for_two | Average cost for two people |
+| Rating | Restaurant rating |
+| Votes | Number of customer votes |
+| Price_range | Price range category |
+
+### **Table 2: restaurant_address**
+| Column | Description |
+|--------|--------------|
+| RestaurantId | Foreign key linking to restaurant table |
+| Country | Country name |
+| CountryCode | Country code |
+| City | City name |
+| Locality | Area or region |
+| Address | Complete restaurant address |
+| Cuisines | Type of cuisines offered |
+| Currency | Currency used in that location |
+
+---
+
+##  **Key SQL Queries**
+
+###  **1. Total number of restaurants in each country**
+```sql
+SELECT Country, COUNT(*) AS Total_Restaurants
+FROM restaurant_address
+GROUP BY Country
+ORDER BY Total_Restaurants DESC;
+ 2. Average price range of restaurants in each city
+sql
+Copy code
+SELECT City, AVG(Price_range) AS Avg_PriceRange
+FROM restaurant_address
+JOIN restaurant ON restaurant_address.RestaurantId = restaurant.RestaurantId
+GROUP BY City
+ORDER BY Avg_PriceRange DESC;
+
+---
 ##  **Insights**
 - Major cities have a higher concentration of restaurants, indicating competitive markets.  
 - Indian, Chinese, and Italian cuisines are among the most popular choices.  
