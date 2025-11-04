@@ -45,9 +45,9 @@ GROUP BY City
 ORDER BY Avg_Rating DESC
 LIMIT 3;
 ---
-## View all queries in
+## **View all queries in**
 ---
-## Insights & Findings
+## **Insights & Findings**
 
 - Major cities host a higher number of restaurants
 
@@ -61,12 +61,12 @@ LIMIT 3;
 
 ---
 
-## Project Files
+##  **Project Files**
 - Zomato_sql_project.pptx	Presentation with visuals and insights
 
 ---
 
- ## Conclusion
+ ##  **Conclusion**
 
 This project demonstrates how SQL can be applied for data-driven insights in the restaurant industry.
 It provides a strong example of database querying, aggregation, and analysis skills — essential for aspiring data analysts.
