@@ -58,20 +58,6 @@ The project demonstrates how data analysis can support strategic decisions for r
 
 ##  **Key SQL Queries**
 
-###  **1. Total number of restaurants in each country**
-```sql
-SELECT Country, COUNT(*) AS Total_Restaurants
-FROM restaurant_address
-GROUP BY Country
-ORDER BY Total_Restaurants DESC;
- 2. Average price range of restaurants in each city
-sql
-Copy code
-SELECT City, AVG(Price_range) AS Avg_PriceRange
-FROM restaurant_address
-JOIN restaurant ON restaurant_address.RestaurantId = restaurant.RestaurantId
-GROUP BY City
-ORDER BY Avg_PriceRange DESC;
 
 ---
 ##  **Insights**
