@@ -58,6 +58,9 @@ The project demonstrates how data analysis can support strategic decisions for r
 
 ##  **Key SQL Queries**
 
+---
+
+## **Project Files**
 
 ---
 ##  **Insights**
