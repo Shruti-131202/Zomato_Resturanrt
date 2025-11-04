@@ -58,6 +58,7 @@ The project demonstrates how data analysis can support strategic decisions for r
 
 ##  **Key SQL Queries**
 
+<a href="https://github.com/Shruti-131202/Zomato_Resturanrt/edit/main/zomato_resturant_sql.sql">Sql Queries</a>
 ---
 
 ## **Project Files**
