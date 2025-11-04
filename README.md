@@ -44,8 +44,9 @@ JOIN restaurant ON restaurant_address.RestaurantId = restaurant.RestaurantId
 GROUP BY City
 ORDER BY Avg_Rating DESC
 LIMIT 3;
-View all queries in
-
+---
+## View all queries in
+---
 ## Insights & Findings
 
 - Major cities host a higher number of restaurants
@@ -58,8 +59,12 @@ View all queries in
 
 - Metro cities tend to have higher average costs for two
 
+---
+
 ## Project Files
 - Zomato_sql_project.pptx	Presentation with visuals and insights
+
+---
 
  ## Conclusion
 
